@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #464646;
+    color: #fff;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+main {
+    max-width: 75vw;
+    min-height: 69vh;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 0.5rem;
+    background-color: rgb(39, 39, 39);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.151);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#search-container {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+#search-input {
+    padding: 10px;
+    font-size: 16px;
+    width: 25vw;
+    height: 7vh;
+    background-color: #575757;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    text-indent: 2px;
+}
+
+#suggestions-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25vw, 1fr));
+    background-color: #707070;
+}
+
+#suggestions-container li {
+    border: 1px solid #fff;
+    border-radius: 0.3rem;
+    height: 2rem;
+}
+
+#suggestions-container li > a {
+    display: block;
+    line-height: 2rem;
+    transition: 0.2s ease-out;
+    text-indent: 0.7rem;
+}
+
+#suggestions-container li > a:hover {
+    background-color: rgb(190, 190, 190);
+}
+
+#suggestions-container li > a > span {
+    float: right;
+    position: relative;
+    right: 3%;
+}
+
+#hero-details-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: auto auto; /* Two rows with auto height */
+    width: 50%;
+    height: 100%;
+}
+
+#hero-power-stats {
+    position: absolute;
+    top: 60vh;
+    /* Boli me kurac */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+}
+
+#hero-image {
+    width: 15vw;
+    height: 40vh;
+    background-color: #eee;
+    background-size: cover;
+    background-position: center;
+}
+
+#hero-image > img {
+    width: 100%;
+    height: 100%;
+}
+
+#hero-details {
+    padding: 20px;
+}
+
+#hero-details h2 {
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+
+#hero-details p {
+    margin: 0 0 20px;
+}
+
+#hero-details ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+#hero-details li {
+    margin-bottom: 10px;
+}
+
+#hero-details li span {
+    font-weight: bold;
+}
