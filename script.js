@@ -1,4 +1,3 @@
-// Print out hero details
 const heroPowerStats = document.querySelector("#hero-power-stats");
 const heroDetails = document.querySelector("#hero-details");
 const heroImageContainer = document.querySelector("#hero-image");
